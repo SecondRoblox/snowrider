@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- <link rel="icon" type="image/x-icon" href="https://pngimg.com/d/calculator_PNG7934.png">
+    <link rel="icon" type="image/x-icon" href="https://pngimg.com/d/calculator_PNG7934.png">
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Sigma Skibidi Studios">
@@ -56,9 +56,6 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
 </head>
-<head>
-    totally normal calculator 
-</head>
 <body>
     <div id="calculator">
         <input type="text" id="result" readonly>
@@ -106,7 +103,6 @@
             if (currentInput === '18') {
                 document.getElementById('calculator').style.display = 'none';
                 document.getElementById('result').value = 'Cheat Code Processing...';
-                setTimeout(,5000)
                 setTimeout(() => {
                     document.getElementById('gameContainer').style.display = 'block';
                     loadGame();
