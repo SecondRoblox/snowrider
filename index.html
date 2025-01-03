@@ -55,7 +55,6 @@
     </style>
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
-<script> alert('Only use this during PRIDE or free time.') </script>
 </head>
 <body>
     <div id="calculator">
@@ -93,7 +92,7 @@
 
     <script>
         let currentInput = '';
-        let gameInstance; // Define gameInstance here
+        let gameInstance;
 
         function pressKey(key) {
             currentInput += key;
@@ -102,12 +101,12 @@
 
         function calculate() {
             if (currentInput === '18') {
-                document.getElementById('calculator').style.display = 'none';
                 document.getElementById('result').value = 'Cheat Code Processing...';
                 setTimeout(() => {
+                    document.getElementById('calculator').style.display = 'none';
                     document.getElementById('gameContainer').style.display = 'block';
                     loadGame();
-                }, 2000);
+                }, 2000); // Wait 2 seconds to show "Cheat Code Processing..."
             } else {
                 try {
                     currentInput = eval(currentInput).toString();
